@@ -15,12 +15,13 @@ import xlsxwriter
 # get italy data
 
 url = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_particular_country.php"
+api_key = 'xxxxx'
 
 querystring = {"country":"Italy"}
 
 headers = {
     'x-rapidapi-host': "coronavirus-monitor.p.rapidapi.com",
-    'x-rapidapi-key': "c190ea1d30msh8a6e8c850d77a40p132fc1jsn9b621f659861"
+    'x-rapidapi-key': api_key
     }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
